@@ -30,7 +30,7 @@ const SKILLS = [
 const TIMELINE = [
   {
     year: "Present",
-    role: "Cloud FinOps Analyst",
+    role: "Cloud FinOps Consultant",
     company: "Accenture",
     description:
       "Working with enterprise clients to analyze AWS cloud spend, identify waste, and implement cost optimization strategies. Leveraging the FinOps framework to drive accountability across engineering and finance teams.",
@@ -38,7 +38,7 @@ const TIMELINE = [
   {
     year: "Earlier",
     role: "Data Analyst",
-    company: "Previous Role",
+    company: "Arcesium",
     description:
       "Built dashboards and automated reporting pipelines for business stakeholders. Developed strong foundations in SQL, Python, and data storytelling — skills that now directly power cloud cost analysis work.",
   },
@@ -110,7 +110,7 @@ export default function AboutPage() {
             <dl className="space-y-3 text-sm">
               <div>
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Role</dt>
-                <dd className="text-ink mt-0.5">Cloud FinOps Analyst</dd>
+                <dd className="text-ink mt-0.5">Cloud FinOps Consultant</dd>
               </div>
               <div>
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Company</dt>
@@ -119,6 +119,7 @@ export default function AboutPage() {
               <div>
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Focus</dt>
                 <dd className="text-ink mt-0.5">AWS Cost Optimization</dd>
+                <dd className="text-ink mt-0.5">Azure Cost Optimization</dd>
               </div>
               <div>
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Certifications</dt>
