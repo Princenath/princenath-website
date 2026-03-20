@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Prince Nath — Cloud FinOps Analyst at Accenture. Background in data analysis, AWS cost optimization, and FinOps frameworks.",
+    "Prince Nath — Cloud FinOps Consultant at Accenture. Background in data analysis, AWS cost optimization, and FinOps frameworks.",
 };
 
 // ── Skills grouped by category ───────────────────────
@@ -22,7 +22,7 @@ const SKILLS = [
   },
   {
     category: "Tools & Platforms",
-    items: ["AWS Console", "Terraform (basics)", "GitHub", "Jira", "Confluence"],
+    items: ["AWS Console", "Flexera", "CloudHealth", "Anodot", "Terraform (basics)", "GitHub", "Jira", "Confluence"],
   },
 ];
 
@@ -65,7 +65,7 @@ export default function AboutPage() {
         {/* Left column: bio */}
         <div className="md:col-span-2 space-y-6">
           <p className="text-base text-ink/80 leading-relaxed">
-            I'm a <strong className="text-ink">Cloud FinOps Analyst at Accenture</strong>, where I help
+            I'm a <strong className="text-ink">Cloud FinOps Consultant at Accenture</strong>, where I help
             organizations understand, control, and reduce their AWS cloud spending.
             My background in data analysis gives me an edge in translating raw billing
             data into clear, actionable insights.
@@ -92,7 +92,7 @@ export default function AboutPage() {
               Get in touch
             </Link>
             <a
-              href="https://linkedin.com/in/princenath"
+              href="https://linkedin.com/in/theprincenath"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-smoke text-ink text-sm font-medium 
@@ -122,7 +122,9 @@ export default function AboutPage() {
               </div>
               <div>
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Certifications</dt>
-                <dd className="text-ink mt-0.5">FinOps Certified Practitioner (pursuing)</dd>
+                <dd className="text-ink mt-0.5">AWS Certified Solutions Architect - Associate</dd>
+                <dd className="text-ink mt-0.5">FinOps Certified Practitioner</dd>
+                <dd className="text-ink mt-0.5">FinOps Certified FOCUS Analyst</dd>
               </div>
             </dl>
           </div>
