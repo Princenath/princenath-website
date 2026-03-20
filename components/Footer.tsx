@@ -18,7 +18,7 @@ export default function Footer() {
         {/* ── Social links ── */}
         <div className="flex items-center gap-6">
           <a
-            href="https://linkedin.com/in/princenath"
+            href="https://linkedin.com/in/theprincenath"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-ash hover:text-accent transition-colors flex items-center gap-1.5"
