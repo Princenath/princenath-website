@@ -54,7 +54,7 @@ export default function ContactPage() {
 
         {/* LinkedIn card */}
         <a
-          href="https://linkedin.com/in/princenath" // ← Update with your LinkedIn URL
+          href="https://linkedin.com/in/theprincenath" // ← Update with your LinkedIn URL
           target="_blank"
           rel="noopener noreferrer"
           className="group block border border-smoke rounded-xl p-7 card-lift bg-paper hover:border-accent transition-all"
@@ -72,7 +72,7 @@ export default function ContactPage() {
             Connect professionally or send a message there.
           </p>
           <p className="text-sm font-mono text-accent">
-            linkedin.com/in/princenath {/* ← Update */}
+            linkedin.com/in/theprincenath {/* ← Update */}
           </p>
         </a>
       </div>
