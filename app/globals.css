@@ -1,0 +1,139 @@
+/* Import distinctive Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Resets ─────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans;
+    letter-spacing: -0.01em;
+  }
+
+  /* Heading defaults use display font */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  /* Remove default list styles inside nav */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Focus ring for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+/* ─── Utility Classes ─────────────────────────────── */
+@layer utilities {
+  /* Staggered animation delays for lists */
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+  .delay-5 { animation-delay: 0.5s; }
+
+  /* Start invisible for fade-up animations */
+  .opacity-start {
+    opacity: 0;
+  }
+}
+
+/* ─── Prose Styles (for blog/markdown content) ────── */
+.prose {
+  @apply font-sans text-ink leading-relaxed;
+  max-width: 70ch;
+}
+
+.prose h1 {
+  @apply font-display text-3xl font-bold mt-10 mb-4 leading-tight;
+}
+.prose h2 {
+  @apply font-display text-2xl font-semibold mt-8 mb-3 leading-snug;
+}
+.prose h3 {
+  @apply font-display text-xl font-semibold mt-6 mb-2;
+}
+.prose p {
+  @apply mb-5 text-base leading-relaxed text-ink/90;
+}
+.prose ul, .prose ol {
+  @apply mb-5 pl-6;
+}
+.prose ul {
+  @apply list-disc;
+}
+.prose ol {
+  @apply list-decimal;
+}
+.prose li {
+  @apply mb-1.5 text-ink/90;
+}
+.prose a {
+  @apply text-accent underline underline-offset-2 hover:text-accent-dark transition-colors;
+}
+.prose strong {
+  @apply font-semibold text-ink;
+}
+.prose em {
+  @apply italic;
+}
+.prose code {
+  @apply font-mono text-sm bg-mist px-1.5 py-0.5 rounded text-ink;
+}
+.prose pre {
+  @apply bg-ink text-paper rounded-lg p-5 overflow-x-auto mb-5;
+}
+.prose pre code {
+  @apply bg-transparent text-paper p-0;
+}
+.prose blockquote {
+  @apply border-l-4 border-accent pl-5 italic text-ash my-6;
+}
+.prose hr {
+  @apply border-smoke my-8;
+}
+.prose img {
+  @apply rounded-lg my-6;
+}
+.prose table {
+  @apply w-full text-sm mb-5;
+}
+.prose th {
+  @apply text-left font-semibold border-b border-smoke pb-2;
+}
+.prose td {
+  @apply py-2 border-b border-smoke/50;
+}
+
+/* ─── Tag pill component ──────────────────────────── */
+.tag {
+  @apply inline-block text-xs font-mono px-2 py-0.5 rounded 
+         bg-mist text-ash border border-smoke/80 
+         hover:border-accent hover:text-accent transition-colors;
+}
+
+/* ─── Card hover lift ─────────────────────────────── */
+.card-lift {
+  @apply transition-all duration-300 ease-out;
+}
+.card-lift:hover {
+  @apply -translate-y-0.5 shadow-md;
+}
+
+/* ─── Subtle divider line ─────────────────────────── */
+.divider {
+  @apply w-12 h-0.5 bg-accent;
+}
