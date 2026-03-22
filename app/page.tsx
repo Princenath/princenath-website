@@ -38,7 +38,7 @@ export default function HomePage() {
 
         {/* Intro paragraph */}
         <p className="mt-6 text-base md:text-lg text-ash leading-relaxed max-w-xl animate-fade-up opacity-start delay-2">
-          I'm Prince Nath — a Cloud FinOps Analyst at Accenture. I work at the
+          As a Cloud FinOps Consultant at Accenture. I work at the
           intersection of data analysis and cloud economics, turning complex
           billing data into actionable cost-saving strategies.
         </p>
