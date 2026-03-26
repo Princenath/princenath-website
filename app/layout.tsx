@@ -9,6 +9,10 @@ import Footer from "@/components/Footer";
 
 // ── Site-wide SEO metadata ──────────────────────────
 export const metadata: Metadata = {
+  metadataBase: new URL("https://princenath.com"),
+  alternates: {
+    canonical: "https://princenath.com",
+  },
   title: {
     default: "Prince Nath — Cloud FinOps & AWS Cost Optimization",
     template: "%s | Prince Nath",
