@@ -11,7 +11,7 @@ Two days before AWS shipped it, I wrote that the direction of FinOps X was unmis
 
 On June 9, AWS announced the public preview of the FinOps Agent. I'm not bringing this up to take a victory lap. The point of writing about a trend before the product ships is that you understand the trend, not that you guessed a date. What matters now is what the Agent actually does, and whether it lives up to what AWS demoed on stage.
 
-I didn't get preview access myself. What I have is something almost as useful: several practitioners deployed it in the first days of preview and published exactly what they found, rough edges included. That's the version of this story worth reading, not the press release.
+I didn't get preview access myself, mainly because there was nothing to get. The preview is open right now to any AWS account, free of charge, no waitlist, no approval step. What I have is something almost as useful as hands-on access: several practitioners turned it on in the first days and published exactly what they found, rough edges included. That's the version of this story worth reading, not the press release.
 
 ---
 
@@ -19,7 +19,9 @@ I didn't get preview access myself. What I have is something almost as useful: s
 
 The FinOps Agent is an agentic AI solution built to investigate cost anomalies down to root cause and answer cost questions for engineers in the tools they already use — Slack and Jira specifically, not a new console you have to learn.
 
-It runs on three triggers. A recurring schedule you define. The moment a cost anomaly is detected. Or on demand, whenever an engineer asks it a question. Under the hood it draws on Cost Explorer, Cost Anomaly Detection, Cost Optimization Hub, and Compute Optimizer — the same data your central FinOps team already works from, which matters because it means the Agent isn't introducing a second source of truth that contradicts your existing dashboards.
+It runs on three triggers. A recurring schedule you define. The moment a cost anomaly is detected. Or on demand, whenever an engineer asks it a question. Under the hood it draws on Cost Explorer, Cost Anomaly Detection, Cost Optimization Hub, and Compute Optimizer : the same data your central FinOps team already works from, which matters because it means the Agent isn't introducing a second source of truth that contradicts your existing dashboards.
+
+A few practical details worth knowing before you evaluate it. The agent itself currently runs only out of US East (N. Virginia), though it can pull cost and usage data covering every AWS region except GovCloud and the China regions. It's free to use during the preview period, though the standard charges still apply to whatever AWS APIs it calls internally, Cost Explorer being the main one. And it's genuinely open right now, not gated behind a waitlist or an approval process — any AWS account holder can turn it on today.
 
 The capabilities that matter most for day-to-day FinOps work: it surfaces rightsizing, idle resource, and Savings Plans recommendations directly from Cost Optimization Hub and Compute Optimizer. It can open Jira tickets on your behalf based on those recommendations. And when an anomaly fires, it investigates the root cause automatically and posts findings to Slack, rather than waiting for a human to start digging through CloudTrail.
 
@@ -37,7 +39,7 @@ One practitioner deployed the Agent in the first days of preview specifically to
 
 But the same review listed a specific set of gaps that any practitioner evaluating this for production use needs to know before getting excited.
 
-The Slack integration is not fully operational yet. For a product whose entire pitch is meeting engineers in the tools they already use, a Slack integration with rough edges undercuts the core value proposition. The app also doesn't appear to be in the Slack marketplace yet, which suggests this part of the rollout is genuinely behind the rest.
+The Slack integration has real setup friction. One reviewer got everything configured, only to hit an error because the FinOps Agent app needed to be manually added as a member of the Slack channel before it would actually work, with no upfront explanation that this step was required. Another reviewer found they had to disable multi-session in the AWS Management Console before agent permissions would configure correctly, again with no warning ahead of time. Neither of these is a fundamental flaw. Both are the kind of friction that shows up consistently in week-one preview software and gets ironed out once enough people hit the same wall and file the same support ticket.
 
 Integration with third-party HTTPS endpoints isn't available. If your organisation runs anything outside the AWS-native toolchain that you'd want the Agent to reach into, that's not on the table yet.
 
