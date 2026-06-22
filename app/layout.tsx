@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     canonical: "https://princenath.com",
   },
   title: {
-    default: "Prince Nath — Cloud FinOps & AWS Cost Optimization",
+    default: "Prince Nath — Cloud FinOps & AI Cost Governance",
     template: "%s | Prince Nath",
   },
   description:
-    "Cloud FinOps Analyst helping organizations optimize AWS costs and infrastructure. Articles, case studies, and insights on cloud cost management.",
+    "Cloud FinOps Consultant specializing in AWS cost optimization and AI cost governance. Helping organizations control cloud and AI spend before it scales out of control.",
   keywords: [
     "Cloud FinOps",
     "AWS Cost Optimization",
@@ -26,6 +26,12 @@ export const metadata: Metadata = {
     "FinOps Analyst",
     "AWS",
     "Data Analysis",
+    "AI Cost Governance",
+    "FinOps for AI",
+    "Amazon Bedrock Cost Optimization", 
+    "LLM Cost Management",
+    "Agentic FinOps",
+    "AI FinOps"
   ],
   authors: [{ name: "Prince Nath" }],
   creator: "Prince Nath",
@@ -34,15 +40,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://princenath.com",
     siteName: "Prince Nath",
-    title: "Prince Nath — Cloud FinOps & AWS Cost Optimization",
+    title: "Prince Nath — Cloud FinOps & AI Cost Governance",
     description:
-      "Cloud FinOps Analyst helping organizations optimize AWS costs and infrastructure.",
+      "Cloud FinOps Consultant specializing in AWS cost optimization and AI cost governance. Helping organizations control cloud and AI spend before it scales out of control.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prince Nath — Cloud FinOps & AWS Cost Optimization",
+    title: "Prince Nath — Cloud FinOps & AI Cost Governance",
     description:
-      "Cloud FinOps Analyst helping organizations optimize AWS costs and infrastructure.",
+      "Cloud FinOps Consultant specializing in AWS cost optimization and AI cost governance. Helping organizations control cloud and AI spend before it scales out of control.",
     creator: "@princenath",
   },
   robots: {

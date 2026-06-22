@@ -7,14 +7,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Prince Nath — Cloud FinOps Consultant at Accenture. Background in data analysis, AWS cost optimization, and FinOps frameworks.",
+    "Prince Nath : Cloud FinOps Consultant at Accenture.specializing in AWS cost optimization and AI cost governance. Helping organizations control cloud and AI spend.",
 };
 
 // ── Skills grouped by category ───────────────────────
 const SKILLS = [
   {
     category: "Cloud & FinOps",
-    items: ["AWS Cost Explorer", "AWS Budgets", "Savings Plans", "Reserved Instances", "Spot Instances", "FinOps Framework", "Rightsizing", "Azure Basics"],
+    items: ["AWS Cost Explorer", "AWS Budgets", "Savings Plans", "Reserved Instances", "Spot Instances", "FinOps Framework", "Rightsizing", "Azure Basics", "Amazon Bedrock", "AI Cost Governance", "Token Economics", "Agentic FinOps"]
   },
   {
     category: "Data & Analysis",
@@ -65,10 +65,11 @@ export default function AboutPage() {
         {/* Left column: bio */}
         <div className="md:col-span-2 space-y-6">
           <p className="text-base text-ink/80 leading-relaxed">
-            I'm a <strong className="text-ink">Cloud FinOps Consultant at Accenture</strong>, where I help
-            organizations understand, control, and reduce their AWS cloud spending.
-            My background in data analysis gives me an edge in translating raw billing
-            data into clear, actionable insights.
+            I'm a <strong className="text-ink">Cloud FinOps Consultant at Accenture</strong>, 
+            specializing in AWS cost optimization and AI cost governance. As AI workloads 
+            scale from experiments to production, the financial controls most organizations 
+            have simply weren't built for token-based billing, autonomous agent spend, or 
+            multi-model cost attribution. I work at that intersection.
           </p>
 
           <p className="text-base text-ink/80 leading-relaxed">
@@ -79,7 +80,15 @@ export default function AboutPage() {
           </p>
 
           <p className="text-base text-ink/80 leading-relaxed">
-            Outside of work, I write about cloud economics on this blog, explore
+            My background in data analysis and MBA in Finance gives me an edge in translating 
+            raw billing data — whether from CUR 2.0 or a Bedrock cost report, into executive 
+            conversations that drive accountability. I use the FinOps framework, AWS-native 
+            tooling, and data-driven analysis to help teams build a culture of cost awareness 
+            before spend becomes ungovernable.
+          </p>
+
+          <p className="text-base text-ink/80 leading-relaxed">
+            Outside of work, I write about cloud economics and AI cost governance on this blog, explore
             new AWS services, and contribute to the broader FinOps community.
           </p>
 
@@ -120,12 +129,15 @@ export default function AboutPage() {
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Focus</dt>
                 <dd className="text-ink mt-0.5">AWS Cost Optimization</dd>
                 <dd className="text-ink mt-0.5">Azure Cost Optimization</dd>
+                <dd className="text-ink mt-0.5">AI Cost Governance</dd>
+                <dd className="text-ink mt-0.5">FinOps for AI</dd>
               </div>
               <div>
                 <dt className="text-xs font-mono text-ash uppercase tracking-wide">Certifications</dt>
                 <dd className="text-ink mt-0.5">AWS Certified Solutions Architect - Associate</dd>
                 <dd className="text-ink mt-0.5">FinOps Certified Practitioner</dd>
                 <dd className="text-ink mt-0.5">FinOps Certified FOCUS Analyst</dd>
+                <dd className="text-ink mt-0.5">FinOps Certified AI Value</dd>
               </div>
             </dl>
           </div>

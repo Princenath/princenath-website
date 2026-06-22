@@ -6,9 +6,9 @@ import { getAllBlogPosts, getAllCaseStudies, formatDate } from "@/lib/markdown";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Prince Nath — Cloud FinOps & AWS Cost Optimization",
+  title: "Prince Nath : Cloud FinOps & AI Cost Governance",
   description:
-    "Cloud FinOps Analyst helping organizations optimize AWS costs and infrastructure. Articles, case studies, and insights.",
+    "Cloud FinOps Consultant focused on Cloud FinOps & AI Cost Governance for the modern enterprise. Articles, case studies, and insights.",
 };
 
 export default function HomePage() {
@@ -75,6 +75,7 @@ export default function HomePage() {
         <div className="flex flex-wrap gap-2">
           {[
             "AWS Cost Explorer",
+            "AI Cost Governance",
             "FinOps Framework",
             "Reserved Instances",
             "Savings Plans",
