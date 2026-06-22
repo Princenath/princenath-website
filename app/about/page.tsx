@@ -73,15 +73,14 @@ export default function AboutPage() {
           </p>
 
           <p className="text-base text-ink/80 leading-relaxed">
-            I believe cloud cost optimization isn't just about cutting spend — it's
+            I believe cloud cost optimization isn't just about cutting spend , it's
             about <em>understanding value</em>. Every dollar saved should be redirected
-            toward innovation. I use the FinOps framework, AWS-native tooling, and
-            data-driven analysis to help teams build a culture of cost awareness.
+            toward innovation.
           </p>
 
           <p className="text-base text-ink/80 leading-relaxed">
             My background in data analysis and MBA in Finance gives me an edge in translating 
-            raw billing data — whether from CUR 2.0 or a Bedrock cost report, into executive 
+            raw billing data , whether from CUR 2.0 or a Bedrock cost report, into executive 
             conversations that drive accountability. I use the FinOps framework, AWS-native 
             tooling, and data-driven analysis to help teams build a culture of cost awareness 
             before spend becomes ungovernable.
