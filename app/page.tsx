@@ -26,21 +26,21 @@ export default function HomePage() {
 
         {/* Small label above headline */}
         <p className="text-xs font-mono tracking-widest text-accent uppercase mb-6 animate-fade-up opacity-start">
-          Cloud FinOps · AWS · Data Analysis
+          Cloud FinOps · AI Cost Governance · AWS
         </p>
 
         {/* Main headline */}
         <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-ink leading-tight max-w-2xl animate-fade-up opacity-start delay-1">
           Helping organizations{" "}
-          <em className="not-italic text-accent">optimize AWS costs</em>{" "}
-          and cloud infrastructure.
+          <em className="not-italic text-accent">govern cloud and AI spend</em>{" "}
+              before it becomes ungovernable.
         </h1>
 
         {/* Intro paragraph */}
         <p className="mt-6 text-base md:text-lg text-ash leading-relaxed max-w-xl animate-fade-up opacity-start delay-2">
-          As a Cloud FinOps Consultant at Accenture. I work at the
-          intersection of data analysis and cloud economics, turning complex
-          billing data into actionable cost-saving strategies.
+          As a Cloud FinOps Consultant at Accenture, I work at the intersection
+          of cloud economics and AI cost governance, helping organizations control
+          AWS spend and build financial guardrails around AI workloads.
         </p>
 
         {/* CTA buttons */}
